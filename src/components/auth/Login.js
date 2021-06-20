@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { startLoginEmailPassword } from '../../actions/auth';
 import { useForm } from '../../hooks/useForm';
 
-export const Login = () => {
+export const Login = ( { history } ) => {
 
     const dispatch = useDispatch();
     const { loading } = useSelector( state => state.ui );
@@ -18,7 +18,10 @@ export const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
+        const lastPath = localStorage.getItem('lastPath') || '/';
+
         dispatch( startLoginEmailPassword( usuario, password ) );
+        history.replace( lastPath );
     }
 
     return (

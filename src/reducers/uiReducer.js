@@ -1,4 +1,5 @@
 import { types } from "../types/types";
+import PropTypes from 'prop-types'
 
 const initialState = {
     loading: false,
@@ -34,4 +35,9 @@ export const uiReducer = ( state= initialState, action) => {
         default:
             return state;
     }
+}
+
+uiReducer.propTypes = {
+    state: PropTypes.object,
+    action: PropTypes.object.isRequired
 }

@@ -16,6 +16,18 @@
     top: 0;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center-right {
+    align-items: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 .grid-layaout {
     display: grid;
     gap: 20px;

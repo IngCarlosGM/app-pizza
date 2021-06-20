@@ -10,11 +10,14 @@ export const startLoginEmailPassword = ( email, password ) => {
 
             let user = (resp.data.response.users).find( user => user.email === email);
             
-            if( user ) {
+            if( user && user.password === password ) {
                 dispatch(login( user.name ));
+                localStorage.setItem('user','{"name":"' + user.name + '", "logged":true}');
+                dispatch( finishLoading() );
             }
 
         }).catch( err => {
+            dispatch( finishLoading() );
             console.log(err);
         });
 
@@ -31,8 +34,6 @@ export const login = ( name ) => ({
 
 export const startLogout = () => {
     return async(dispatch) => {
-        // await firebase.auth().signOut();
-        // dispatch( logout() );
-        // dispatch( noteLogout() );
     }
 }
+

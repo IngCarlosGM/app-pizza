@@ -1,36 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
     Redirect
   } from 'react-router-dom';
+  import { useDispatch, useSelector } from 'react-redux';
 
 import { AuthRouter } from './AuthRouter';
 import { Dashboard } from '../components/dashboard/Dashboard';
-import { useDispatch } from 'react-redux';
-// import { login } from '../actions/auth';
 import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
 import BackgroundAside from '../components/BackgroundAside';
+import { login } from '../actions/auth';
 
 export const AppRouter = () => {
 
     const dispatch = useDispatch();
+    const { logged, name } = useSelector( state => state.auth );
 
     const [checking, setChecking] = useState(true);
     const [loggedIn, setLoggedIn] = useState(false);
 
     useEffect(() => {
-        if( !loggedIn ) {
-            // setLoggedIn( true );
-            setChecking( false );
+        let loggedLocalstorage = JSON.parse(localStorage.getItem('user')) || { name: '', logged: false };
+        
+        if( logged || loggedLocalstorage.logged ) {
+            dispatch( login( name || loggedLocalstorage.name )); 
+            setLoggedIn( true );
+            
+        } else {
+            setLoggedIn( false );
         }
         
-    }, [ dispatch, setChecking, setLoggedIn, loggedIn ]);
+        setChecking( false );
+    }, [ dispatch, setChecking, setLoggedIn, logged ]);
 
     if( checking ) {
         return (
-            <h1>Wait...</h1>
+            <h1>Por favor espere...</h1>
         );
     }
 
