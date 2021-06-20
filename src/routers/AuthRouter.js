@@ -5,21 +5,18 @@ import { Login } from '../components/auth/Login';
 
 export const AuthRouter = () => {
     return (
-        <div className="auth__main">
-            <div className="auth__box-container">
-                <Switch>
-                    <Route 
-                        exact
-                        path="/auth/login"
-                        component={ Login }
-                    />
+        <main className="auth__main">
+            <Switch>
+                <Route 
+                    exact
+                    path="/auth/login"
+                    component={ Login }
+                />
 
-                    <Redirect to="/auth/login" />
+                <Redirect to="/auth/login" />
 
 
-                </Switch>
-            </div>
-
-        </div>
+            </Switch>
+        </main>
     )
 }

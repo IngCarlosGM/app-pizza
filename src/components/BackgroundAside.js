@@ -3,7 +3,7 @@ import React from 'react';
 const BackgroundAside = () => {
 
     return (
-        <div className="relative">
+        <aside className="relative">
             <img 
                 className="object-fit"
                 src={`../assets/imagebkg.png`} 
@@ -11,17 +11,17 @@ const BackgroundAside = () => {
             />
 
             <img 
-                className="center-vertical-horizontal-absolute size-image-pizza absolute"
+                className="center-vertical-horizontal-absolute size-image-pizza absolute img-responsive "
                 src={`../assets/Pizza.png`} 
                 alt="Imagen de una Pizza"
             />
 
             <img 
-                className="absolute logo-aside"
+                className="absolute logo-aside img-responsive "
                 src={`../assets/Logo.png`} 
                 alt="Logo de Best pizza"
             />
-        </div>
+        </aside>
     )
 }
 

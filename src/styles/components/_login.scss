@@ -1,18 +1,42 @@
 .auth__main {
     padding: 0px 20px 0px 0px;
+    overflow-y: auto;
+    width: 100% ;
+
+    @media (min-width: $breakpoint-landscape-phone) and (orientation: landscape) { 
+        padding-right: 30px;
+    }
+
+    @media (min-width: $breakpoint-landscape-tablet) and (orientation: landscape) { 
+        padding-right: 0px;
+    }
+
+    @media (min-width: $breakpoint-tablet) and (orientation: portrait) {
+        padding-right: 10px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
 
 .container-inputs {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    @include display-column-center-horizontal;
     width: 100%;
 }
 
 .welcome {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    @include display-column-center-horizontal;
+    overflow-y: auto;
+
+    @media (min-width: $breakpoint-landscape-phone) and (orientation: landscape) { 
+        margin-top: 40px;
+    }
+
+    @media (min-width: $breakpoint-tablet) and (orientation: portrait) { 
+        padding-left: 10%;
+    }
 }
 
 .welcome__text {
@@ -28,5 +52,5 @@
 
 .welcome__title {
     color: $color-secondary;
-    font-size: 25px;
+    font-size: 35px;
 }

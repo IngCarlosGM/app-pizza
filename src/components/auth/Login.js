@@ -22,8 +22,9 @@ export const Login = () => {
     }
 
     return (
-        <div className="welcome mt-primary">
+        <div className="welcome mt-primary mb-primary">
             <img 
+                id="logo-aside-best-pizza"
                 className="welcome__size-logo"
                 src={`../assets/Login-Best-Pizza.png`} 
                 alt="Logo de Best pizza"
@@ -46,22 +47,22 @@ export const Login = () => {
 
                 <input 
                     type="password"
-                    placeholder="Password"
+                    placeholder="Contraseña"
                     name="password"
-                    className="input input--block input--password mt-input"
+                    className="input--block input--password mt-input"
                     value={ password }
                     onChange={ handleInputChange }
                 />
 
             </div>
 
-            <a href="#" className="mt-third">¿Olvidaste tu contraseña?</a>
+            <a href="#" className="mt-third pointer">¿Olvidaste tu contraseña?</a>
 
             <button
-                className="btn btn__primary btn-block mt-secondary"
+                className="btn__primary btn-block mt-secondary"
                 onClick={(e) => { handleLogin(e) }}
                 disabled= { loading }
-            >Login</button>
+            >Iniciar sesión</button>
         </div>
     )
 }

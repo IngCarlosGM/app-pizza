@@ -12,7 +12,6 @@ import { useDispatch } from 'react-redux';
 import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
 import BackgroundAside from '../components/BackgroundAside';
-// import { startLoadingNotes } from '../actions/notes';
 
 export const AppRouter = () => {
 

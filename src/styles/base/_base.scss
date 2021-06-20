@@ -19,8 +19,20 @@
 .grid-layaout {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 0% 94%;
     grid-template-rows: 100vh;
+
+    @media (min-width: $breakpoint-landscape-phone) and (orientation: landscape) { 
+        grid-template-columns: 30% 64%;
+    }
+
+    @media (min-width: $breakpoint-landscape-tablet) and (orientation: landscape) { 
+        grid-template-columns: 47% 47%;
+    }
+
+    @media (min-width: $breakpoint-tablet) and (orientation: portrait) {
+        grid-template-columns: 47% 47%;
+    }
 }
 
 html, body, #root {
@@ -28,8 +40,17 @@ html, body, #root {
     width: 100vw;
 }
 
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
 main {
     width: 100%;
+}
+
+.mb-primary {
+    margin-bottom: 80px;
 }
 
 .mt-input {

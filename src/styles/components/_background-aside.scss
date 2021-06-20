@@ -1,12 +1,18 @@
-.size-image-pizza {
-    font-size: 50px;
-    height: 4em;
-    width: 4em;
-}
-
 .logo-aside {
-    height: 4em;
+    display: none;
     left: 5em;
     top: 30px;
-    width: 5em;
+}
+
+.size-image-pizza {
+    display: none;
+
+    @media (max-width: 540px ) and (orientation: portrait) {
+        grid-template-columns: 0% 94%;
+    }
+
+    @media screen and (min-width: $breakpoint-landscape-phone) { 
+        display: block;
+    }
+
 }
