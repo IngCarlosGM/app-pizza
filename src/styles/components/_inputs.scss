@@ -1,0 +1,29 @@
+.input {
+    border: 1px solid $color-third;
+    background-repeat: no-repeat;
+    background-position: right 9px;
+    background-position-x: calc(100% - 4px);
+    background-size: 20px;
+    border-radius: 4px;
+    color: $color-third;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 30px;
+
+    &:focus {
+        outline: $color-primary solid 2px;
+        border: 0px transparent;
+    }
+}
+
+.input--block {
+    width: 100%;
+}
+
+.input--password {
+    background-image: url('../../assets/icons/ic_contrasena.png');
+}
+
+.input--user {
+    background-image: url('../../assets/icons/ic_usuario.png');
+}

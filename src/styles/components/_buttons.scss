@@ -1,0 +1,40 @@
+
+.btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: $color-secondary;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    padding: 7px 10px 7px 10px;
+
+    transition: color .3s ease;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: darken($color: $color-secondary, $amount: 10);
+    }
+    
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn__primary {
+    background-color: $color-primary;
+    border-radius: 2px;
+    box-shadow: 2px 4px 4px 1px rgba($color: $color-third, $alpha: 0.3);
+    
+    &:disabled {
+        background-color: lighten($color: $color-primary, $amount: 15);
+    }
+
+    &:hover { 
+        background-color: darken($color: $color-primary, $amount: 15);
+    }
+}

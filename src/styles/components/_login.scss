@@ -1,0 +1,32 @@
+.auth__main {
+    padding: 0px 20px 0px 0px;
+}
+
+.container-inputs {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.welcome {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__text {
+    color: $color-third;
+    font-size: 18px;
+}
+
+.welcome__size-logo {
+    font-size: 40px;
+    height: 3em;
+    width: 4em;
+}
+
+.welcome__title {
+    color: $color-secondary;
+    font-size: 25px;
+}
