@@ -1,9 +1,13 @@
-function App() {
-  return (
-    <div>
-      <h1>Dashboard</h1>
-    </div>
-  );
-}
+import React from 'react';
+import { AppRouter } from './routers/AppRouter';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+import './styles/styles.scss'
 
-export default App;
+export const App = () => {
+    return (
+        <Provider store={ store }>
+                <AppRouter />
+        </Provider>
+    )
+}
