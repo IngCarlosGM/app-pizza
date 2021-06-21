@@ -1,3 +1,12 @@
+.container-dashboard {
+    height: calc(100vh - 60px);
+
+    @media screen and (min-width: $breakpoint-large) {
+        width: 80%;
+    }
+
+}
+
 .container-item-store {
     height: 190px;
     width: 100%;
@@ -10,19 +19,15 @@
 .grid-shop {
     display: grid;
     gap: 20px;
-    grid-template-columns: 30.6% 30.6% 30.6%;
+    grid-template-columns: 47% 47%;
     max-height: calc(100vh - 290px);
 
-    @media (min-width: $breakpoint-landscape-phone) and (orientation: landscape) { 
-        // grid-template-columns: 30% 64%;
-    }
-
     @media (min-width: $breakpoint-landscape-tablet) and (orientation: landscape) { 
-        // grid-template-columns: 47% 47%;
+            grid-template-columns: 29.6% 29.6% 29.6%;
     }
 
     @media (min-width: $breakpoint-tablet) and (orientation: portrait) {
-        // grid-template-columns: 47% 47%;
+        grid-template-columns: 29.6% 29.6% 29.6%;
     }
 
 }

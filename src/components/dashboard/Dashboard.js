@@ -18,7 +18,7 @@ export const Dashboard = () => {
     }, [user]);
 
     return (
-        <div>
+        <div className="scroll-y container-dashboard">
             <NavBar />
             <RouteNavigation route="Pizzerías"/>
             <TitlePage title="Tiendas" myStyle="mt-secondary"/>

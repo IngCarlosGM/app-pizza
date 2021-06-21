@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -33,7 +33,7 @@ export const AppRouter = () => {
         }
         
         setChecking( false );
-    }, [ dispatch, setChecking, setLoggedIn, logged ]);
+    }, [ dispatch, setChecking, setLoggedIn, logged, name ]);
 
     if( checking ) {
         return (

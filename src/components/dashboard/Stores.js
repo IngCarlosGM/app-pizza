@@ -14,7 +14,7 @@ export const Stores = () => {
     }, [dispatch]);
 
     return (
-        <div className="grid-shop scroll-y mt-secondary">
+        <div className="grid-shop mt-secondary">
             {
                 stores && stores.map( itemStore => {
                     return <ItemStore 
