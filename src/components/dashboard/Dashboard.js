@@ -8,7 +8,7 @@ import { DescriptionPage } from '../templates/DescriptionPage';
 import { Stores } from './Stores';
 import { Footer } from '../Footer';
 
-export const Dashboard = () => {
+export const Dashboard = ({ history }) => {
 
     const { auth: user } = useSelector(state => state);
 
@@ -19,7 +19,7 @@ export const Dashboard = () => {
 
     return (
         <div className="scroll-y container-dashboard">
-            <NavBar />
+            <NavBar history={ history }/>
             <RouteNavigation route="Pizzerías"/>
             <TitlePage title="Tiendas" myStyle="mt-secondary"/>
             <DescriptionPage description="Escoge tu pizzería favorita"/>

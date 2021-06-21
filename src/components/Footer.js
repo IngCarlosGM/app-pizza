@@ -7,6 +7,7 @@ export const Footer = () => {
                 <a 
                     href="https://facebook.com"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <img 
                         className="footer__icons img-responsive pointer"
@@ -18,6 +19,7 @@ export const Footer = () => {
                 <a 
                     href="https://instagram.com"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <img 
                         className="footer__icons img-responsive pointer"
@@ -30,6 +32,7 @@ export const Footer = () => {
             <a 
                 href="https://mybestpizza.net/"
                 target="_blank"
+                rel="noreferrer"
             >
                 <img 
                     className="footer__icons img-responsive pointer"

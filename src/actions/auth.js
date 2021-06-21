@@ -25,6 +25,13 @@ export const startLoginEmailPassword = ( email, password ) => {
     }
 }
 
+export const startLogout = () => {
+    return ( dispatch ) => {
+        localStorage.setItem('user', '{"name":"","logged":false}');
+        dispatch( logout() );
+    }
+}
+
 export const login = ( name ) => ({
     type: types.login,
     payload: {
@@ -32,8 +39,7 @@ export const login = ( name ) => ({
     }
 });
 
-export const startLogout = () => {
-    return async(dispatch) => {
-    }
-}
+export const logout = () => ({
+    type: types.logout,
+});
 

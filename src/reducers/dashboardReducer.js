@@ -9,6 +9,9 @@ export const dashBoardReducer = (state = {}, action) => {
                 stores: action.payload.stores
             }
 
+        case types.logout:
+            return { };
+
         default:
             return state;
     }
