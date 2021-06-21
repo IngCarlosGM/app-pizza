@@ -21,6 +21,12 @@
     
 }
 
+@mixin display-column-center-horizontal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin input {
     border: 1px solid $color-third;
     background-repeat: no-repeat;
@@ -39,8 +45,8 @@
     }
 }
 
-@mixin display-column-center-horizontal {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+@mixin truncate-one-line {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }

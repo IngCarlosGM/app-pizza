@@ -17,6 +17,7 @@ const BackgroundAside = () => {
             />
 
             <img 
+                id="logo-best-pizza-aside"
                 className="absolute logo-aside img-responsive "
                 src={`../assets/Logo.png`} 
                 alt="Logo de Best pizza"

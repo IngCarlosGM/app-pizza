@@ -1,4 +1,4 @@
-import getUsers from "../helpers/getUsers";
+import getData from "../helpers/getData";
 import { types } from "../types/types";
 import { finishLoading, startLoading } from './ui';
 
@@ -6,7 +6,7 @@ export const startLoginEmailPassword = ( email, password ) => {
     return ( dispatch ) => {
         dispatch(startLoading);
 
-        getUsers().then(( resp ) => {
+        getData().then(( resp ) => {
 
             let user = (resp.data.response.users).find( user => user.email === email);
             

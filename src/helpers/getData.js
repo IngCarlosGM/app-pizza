@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const getUsers = async() => {
+const getData = async() => {
     const instanceAxios = axios.create({
         baseURL: process.env.REACT_APP_URL
     });
@@ -8,4 +8,4 @@ const getUsers = async() => {
     return await instanceAxios.get();
 }
 
-export default getUsers;
+export default getData;
