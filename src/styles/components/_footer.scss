@@ -1,0 +1,31 @@
+footer {
+    background-color: $color-secondary;
+    bottom: 0px;
+    height: 60px;
+    left: 0;
+    padding-right: 80px;
+    padding-left: 50px;
+    position: fixed;
+    width: 100%;
+
+    @media (min-width: $breakpoint-landscape-phone) and (orientation: landscape) { 
+        left: 30%;
+        width: 70%;
+    }
+
+    @media (min-width: $breakpoint-tablet) and (orientation: portrait) {
+        left: 47%;
+        width: 55%;
+    }
+
+    @media (min-width: $breakpoint-landscape-tablet) and (orientation: landscape) { 
+        left: 47%;
+        width: 55%;
+}
+}
+
+.footer__icons {
+    height: 24px;
+    margin-right: 10px;
+    width: 24px;
+}

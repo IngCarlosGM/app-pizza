@@ -1,0 +1,18 @@
+.btn-block {
+    width: 100%;
+}
+
+.btn__primary {
+    @include btn;
+    background-color: $color-primary;
+    border-radius: 2px;
+    box-shadow: 2px 4px 4px 1px rgba($color: $color-third, $alpha: 0.3);
+    
+    &:disabled {
+        background-color: lighten($color: $color-primary, $amount: 15);
+    }
+
+    &:hover { 
+        background-color: darken($color: $color-primary, $amount: 15);
+    }
+}

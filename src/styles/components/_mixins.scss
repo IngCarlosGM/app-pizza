@@ -1,0 +1,52 @@
+@mixin btn {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: $color-secondary;
+    cursor: pointer;
+    font-size: 16px;
+    height: 60px;
+    padding: 7px 10px 7px 10px;
+
+    transition: color .3s ease;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: darken($color: $color-secondary, $amount: 10);
+    }
+    
+}
+
+@mixin display-column-center-horizontal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin input {
+    border: 1px solid $color-third;
+    background-repeat: no-repeat;
+    background-position: right 16px;
+    background-position-x: calc(100% - 8px);
+    background-size: 25px;
+    border-radius: 4px;
+    color: $color-third;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 40px;
+
+    &:focus {
+        border: $color-primary solid 2px;
+        outline: none;
+    }
+}
+
+@mixin truncate-one-line {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

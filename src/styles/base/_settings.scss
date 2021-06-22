@@ -4,3 +4,11 @@ $color-primary: #f9c444;
 $color-secondary: #1f1f1f;
 $color-third: #818181;
 $color-white: #fff;
+
+//breakpoints (Mobile first)
+$breakpoint-desktop: 992px;
+$breakpoint-landscape-phone: 640px;
+$breakpoint-landscape-tablet: 1000px;
+$breakpoint-large: 1200px;
+$breakpoint-landscape-large: 1200px;
+$breakpoint-tablet: 768px;
