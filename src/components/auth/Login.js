@@ -10,8 +10,8 @@ export const Login = ( { history } ) => {
     const { loading } = useSelector( state => state.ui );
 
     const [ formValues, handleInputChange ] = useForm({
-        usuario: '',
-        password: ''
+        usuario: 'jgonzalez@gonzalez.com',
+        password: 'jgonzalez123'
     });
 
     const { usuario, password } = formValues;

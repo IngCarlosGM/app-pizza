@@ -58,6 +58,10 @@ html, body, #root {
     width: 100vw;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .img-responsive {
     max-width: 100%;
     height: auto;

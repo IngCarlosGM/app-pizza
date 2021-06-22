@@ -1,5 +1,10 @@
+.btn-responsive {
+    width: 20%;
+}
+
 .container-dashboard {
     height: calc(100vh - 60px);
+    padding-right: 20px;
 
     @media screen and (min-width: $breakpoint-large) {
         width: 80%;
@@ -42,6 +47,11 @@
     border-radius: 8px;
     height: 140px;
     margin-bottom: 10px;
+}
+
+.not-store-founds {
+    color: $color-third;
+    font-size: 14px;
 }
 
 .title-item-store {

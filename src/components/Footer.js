@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
@@ -29,17 +30,13 @@ export const Footer = () => {
                 </a>
             </div>
 
-            <a 
-                href="https://mybestpizza.net/"
-                target="_blank"
-                rel="noreferrer"
-            >
+            <Link to="/">
                 <img 
                     className="footer__icons img-responsive pointer"
                     src={`../assets/logo-best-pizza-white.png`} 
                     alt="Logo best pizza blanco" 
                 />
-            </a>
+            </Link>
         </footer>
     )
 }

@@ -9,6 +9,19 @@
     background-image: url('../../assets/icons/ic_contrasena.png');
 }
 
+.input-search {
+    @include input;
+    width: 80%;
+
+    @media (min-width: $breakpoint-landscape-tablet) and (orientation: landscape) { 
+
+    }
+
+    @media (min-width: $breakpoint-tablet) and (orientation: portrait) {
+        
+    }
+}
+
 .input--user {
     @include input;
     background-image: url('../../assets/icons/ic_usuario.png');
