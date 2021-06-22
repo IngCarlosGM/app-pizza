@@ -21,13 +21,13 @@ export const Dashboard = ({ history }) => {
     const dispatch = useDispatch();
 
     const params = queryString.parse(location.search);
-    const currentItem = parseInt(((params.id !== undefined) && params.id)  ||  0);
+    const currentItem = parseInt(((params.id !== undefined) && params.id)  ||  0); //Store selected
 
-    const { auth: user, dashboard: { stores } } = useSelector(state => state);  
-    const { q: query = '' } = queryString.parse( location.search );
+    const { auth: user, dashboard: { stores } } = useSelector(state => state); //User authenticate and Store loaded
+    const { q: query = '' } = queryString.parse( location.search ); //Text search on query
     const [ formValues, handleInputChange ] = useForm({
         searchText: query
-    });
+    }); //Handle input to search stores
     const { searchText } = formValues;
 
     useEffect(() => {
@@ -36,6 +36,7 @@ export const Dashboard = ({ history }) => {
         document.getElementById("logo-best-pizza-aside").style.display = "block";
     }, [user, dispatch]);
     
+    //Memorize results
     const storesFiltered = useMemo(() => getStoresByName( query, stores ), [query, stores]);
 
     return (

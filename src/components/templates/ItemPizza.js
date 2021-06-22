@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const ItemPizza = ({ itemPizza }) => {
 
     return (
-        <div className="container-item-store pointer animate__bounceIn">
+        <div className="container-item-store container-item-store--without-hover pointer animate__bounceIn">
             <div className="item-store">
                 <img 
                     className="img-item-store"

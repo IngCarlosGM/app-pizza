@@ -5,13 +5,14 @@ export const FormSearch = ({ history, searchText, handleInputChange }) => {
 
     const handleSearch = (e) => {
         e.preventDefault();
+        localStorage.setItem('lastPath', JSON.stringify(`?q=${ searchText }`) );
         history.push(`?q=${ searchText }`);
     }
 
     const handleKeyUp = (e) => {
         e.preventDefault();
         if( e.target.value === '') {
-            history.push('?q=');
+            history.push('/');
         }
     }
 

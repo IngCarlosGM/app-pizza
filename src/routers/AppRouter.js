@@ -7,11 +7,11 @@ import {
   import { useDispatch, useSelector } from 'react-redux';
 
 import { AuthRouter } from './AuthRouter';
-import { Dashboard } from '../components/dashboard/Dashboard';
 import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
 import BackgroundAside from '../components/BackgroundAside';
 import { login } from '../actions/auth';
+import { DashboardRoutes } from './DashboardRoutes';
 
 export const AppRouter = () => {
 
@@ -56,10 +56,9 @@ export const AppRouter = () => {
                         loggedIn= { loggedIn }
                     />
 
-                    <PrivateRoute 
-                        exact
+                    <PrivateRoute
                         path="/"
-                        component={ Dashboard }
+                        component={ DashboardRoutes }
                         loggedIn={ loggedIn }
                     />
 

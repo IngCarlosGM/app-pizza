@@ -19,22 +19,49 @@
     &:hover { 
         background-color: darken($color: $color-white, $amount: 15);
     }
+
+    @media (min-width: $breakpoint-tablet) and (orientation: portrait) {
+        height: 150px;
+    }
+
+    @media (min-width: $breakpoint-landscape-large) and (orientation: landscape) {
+        height: 150px;
+    }
+}
+
+.container-item-store--without-hover {
+    cursor: default;
+
+    &:hover { 
+        background-color: darken($color: transparent, $amount: 0);
+    }
 }
 
 .grid-shop {
     display: grid;
     gap: 20px;
-    grid-template-columns: 47% 47%;
+    grid-template-columns: 24% 24% 24% 24%;
     max-height: calc(100vh - 290px);
 
     @media (min-width: $breakpoint-landscape-tablet) and (orientation: landscape) { 
-            grid-template-columns: 29.6% 29.6% 29.6%;
+            grid-template-columns: 32% 32% 32%;
     }
 
     @media (min-width: $breakpoint-tablet) and (orientation: portrait) {
         grid-template-columns: 29.6% 29.6% 29.6%;
     }
 
+    @media (min-width: $breakpoint-tablet) and (orientation: landscape) {
+        grid-template-columns: 22% 22% 22% 22%;
+    }
+
+    @media (min-width: $breakpoint-desktop) and (orientation: portrait) {
+        grid-template-columns: 32% 32% 32%;
+    }
+    
+    @media (min-width: $breakpoint-large) and (orientation: portrait) {
+        grid-template-columns: 30% 30% 30%;
+    }
 }
 
 .img-item-store {
@@ -47,6 +74,14 @@
     border-radius: 8px;
     height: 140px;
     margin-bottom: 10px;
+
+    @media (min-width: $breakpoint-tablet) and (orientation: portrait) {
+        height: 100px;
+    }
+
+    @media (min-width: $breakpoint-landscape-large) and (orientation: landscape) {
+        height: 100px;
+    }
 }
 
 .not-store-founds {

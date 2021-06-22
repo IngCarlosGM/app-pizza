@@ -1,19 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import queryString from 'query-string';
+import { Link } from 'react-router-dom';
 
 export const ItemStore = ({ itemStore, history }) => {
 
     const params = queryString.parse(history.location.search);
 
-    const handleShowStore = () => {
-        let q = (params.q) ? `?q=${params.q}&`: '?';        
-        history.push(`${ q }id=${ itemStore.id }&show=true`);
-    } 
+    let q = (params.q) ? `q=${params.q}&`: '';
 
     return (
-        <div 
-            onClick={ handleShowStore }
+        <Link to={ `/search?${ q }id=${ itemStore.id }&show=true` }
             className="container-item-store pointer animate__bounceIn"
         >
             <div className="item-store">
@@ -27,7 +24,7 @@ export const ItemStore = ({ itemStore, history }) => {
                 <span className="title-item-store">{ itemStore.name }</span>
                 <span className="addres-item-store">{ itemStore.address }</span>
             </div>
-        </div>
+        </Link>
     )
 }
 
