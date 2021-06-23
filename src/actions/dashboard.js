@@ -11,7 +11,6 @@ export const startLoadingStore = ( ) => {
 
         }).catch( err => {
             dispatch( finishLoading );
-            console.log(err);
         });
 
         dispatch(finishLoading);
