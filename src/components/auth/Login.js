@@ -23,7 +23,7 @@ export const Login = ( { history } ) => {
         dispatch( startLoginEmailPassword( usuario, password ) );
         history.replace( lastPath );
     }
-
+ 
     return (
         <div className="welcome mt-primary mb-primary">
             <img 

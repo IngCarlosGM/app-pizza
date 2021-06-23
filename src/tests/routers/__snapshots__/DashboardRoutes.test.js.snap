@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <DashboardRoutes /> should render correctly 1`] = `
+<div
+  className="scroll-y container-dashboard"
+>
+  <nav
+    className="align-center-right"
+  >
+    <img
+      alt="ícono candado"
+      className="img_responsive size-icon-logout"
+      src="../assets/ic_contrasena.png"
+    />
+    <span
+      className="text-logout pointer"
+      onClick={[Function]}
+    >
+      Salir
+    </span>
+  </nav>
+  <span
+    className="route-navigation"
+  >
+    Pizzerías
+  </span>
+  <h1
+    className=" mt-secondary"
+  >
+    Tiendas
+  </h1>
+  <div
+    className="description-page "
+  >
+    Escoge tu pizzería favorita
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-search input--block mt-third"
+      name="searchText"
+      onChange={[Function]}
+      onKeyUp={[Function]}
+      placeholder="Buscar una tienda"
+      type="text"
+      value=""
+    />
+    <button
+      className="btn__primary btn-block btn-responsive"
+      id="btn_search"
+      type="submit"
+    >
+      Buscar
+    </button>
+  </form>
+  <div
+    className="mt-third not-store-founds"
+  >
+    No se han encontrado tiendas que coincidan con la búsqueda
+  </div>
+  <div
+    className="grid-shop mt-secondary"
+  />
+  <footer
+    className="space-between align-center"
+  >
+    <div>
+      <a
+        href="https://facebook.com"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Logo best pizza blanco"
+          className="footer__icons img-responsive pointer"
+          src="../assets/logo-facebook.png"
+        />
+      </a>
+      <a
+        href="https://instagram.com"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Logo best pizza blanco"
+          className="footer__icons img-responsive pointer"
+          src="../assets/logo-instagram.png"
+        />
+      </a>
+    </div>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="Logo best pizza blanco"
+        className="footer__icons img-responsive pointer"
+        src="../assets/logo-best-pizza-white.png"
+      />
+    </a>
+  </footer>
+</div>
+`;

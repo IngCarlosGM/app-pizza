@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teting DescriptionPage component should render correctly 1`] = `
+<aside
+  className="relative"
+>
+  <img
+    alt="Fondo negro de la ilustración"
+    className="object-fit"
+    src="../assets/imagebkg.png"
+  />
+  <img
+    alt="Imagen de una Pizza"
+    className="center-vertical-horizontal-absolute size-image-pizza absolute img-responsive "
+    src="../assets/Pizza.png"
+  />
+  <img
+    alt="Logo de Best pizza"
+    className="absolute logo-aside img-responsive "
+    id="logo-best-pizza-aside"
+    src="../assets/Logo.png"
+  />
+</aside>
+`;

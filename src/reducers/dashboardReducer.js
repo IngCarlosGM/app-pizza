@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 export const dashBoardReducer = (state = {}, action) => {
     switch( action.type ) {
+        
         case types.dasboardStartLoadingStores:
-            
             return {
                 stores: action.payload.stores
             }

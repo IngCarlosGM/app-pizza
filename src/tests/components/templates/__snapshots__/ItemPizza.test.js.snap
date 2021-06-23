@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ItemPizza component should render correctly 1`] = `
+<div
+  className="container-item-store container-item-store--without-hover pointer animate__bounceIn"
+>
+  <div
+    className="item-store"
+  >
+    <img
+      alt="Logo pizza"
+      className="img-item-store"
+      src="../assets/pizzas/pizza-1.png"
+    />
+  </div>
+  <div
+    className="flex-column"
+  >
+    <span
+      className="title-item-store"
+    >
+      Pizza de Pollo
+    </span>
+  </div>
+</div>
+`;

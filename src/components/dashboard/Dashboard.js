@@ -33,7 +33,11 @@ export const Dashboard = ({ history }) => {
     useEffect(() => {
         dispatch( startLoadingStore() );
         localStorage.setItem( 'user', JSON.stringify(user) );
-        document.getElementById("logo-best-pizza-aside").style.display = "block";
+        
+        const logoAside = document.getElementById("logo-best-pizza-aside");
+        if( logoAside && logoAside !== undefined ) {
+            logoAside.style.display = "block";
+        }
     }, [user, dispatch]);
     
     //Memorize results

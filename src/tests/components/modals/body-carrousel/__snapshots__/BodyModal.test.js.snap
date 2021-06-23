@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing BodyModal component should render correctly 1`] = `
+<div
+  className="container__modal-body"
+>
+  <div
+    className="flex-column"
+  >
+    <span
+      className="modal-body__text-description"
+    >
+      Esta pizzeria se especializa en ingredientes salados
+    </span>
+    <span
+      className="modal-body__text-description"
+    >
+      Calle 1 #2-3
+    </span>
+  </div>
+  <div
+    className="grid-pizzas mt-third"
+  >
+    <div
+      className="container-item-store container-item-store--without-hover pointer animate__bounceIn"
+    >
+      <div
+        className="item-store"
+      >
+        <img
+          alt="Logo pizza"
+          className="img-item-store"
+          src="../assets/pizzas/pizza-1.png"
+        />
+      </div>
+      <div
+        className="flex-column"
+      >
+        <span
+          className="title-item-store"
+        >
+          Pizza de Pollo
+        </span>
+      </div>
+    </div>
+    <div
+      className="container-item-store container-item-store--without-hover pointer animate__bounceIn"
+    >
+      <div
+        className="item-store"
+      >
+        <img
+          alt="Logo pizza"
+          className="img-item-store"
+          src="../assets/pizzas/pizza-2.png"
+        />
+      </div>
+      <div
+        className="flex-column"
+      >
+        <span
+          className="title-item-store"
+        >
+          Piza Pollo y Champiñones
+        </span>
+      </div>
+    </div>
+    <div
+      className="container-item-store container-item-store--without-hover pointer animate__bounceIn"
+    >
+      <div
+        className="item-store"
+      >
+        <img
+          alt="Logo pizza"
+          className="img-item-store"
+          src="../assets/pizzas/pizza-3.png"
+        />
+      </div>
+      <div
+        className="flex-column"
+      >
+        <span
+          className="title-item-store"
+        >
+          Pizza Vegetales
+        </span>
+      </div>
+    </div>
+    <div
+      className="container-item-store container-item-store--without-hover pointer animate__bounceIn"
+    >
+      <div
+        className="item-store"
+      >
+        <img
+          alt="Logo pizza"
+          className="img-item-store"
+          src="../assets/pizzas/pizza-4.png"
+        />
+      </div>
+      <div
+        className="flex-column"
+      >
+        <span
+          className="title-item-store"
+        >
+          Pizza Vegetales y Atun 
+        </span>
+      </div>
+    </div>
+    <div
+      className="container-item-store container-item-store--without-hover pointer animate__bounceIn"
+    >
+      <div
+        className="item-store"
+      >
+        <img
+          alt="Logo pizza"
+          className="img-item-store"
+          src="../assets/pizzas/pizza-5.png"
+        />
+      </div>
+      <div
+        className="flex-column"
+      >
+        <span
+          className="title-item-store"
+        >
+          Pizza 3 Quesos con Champiñones
+        </span>
+      </div>
+    </div>
+    <div
+      className="container-item-store container-item-store--without-hover pointer animate__bounceIn"
+    >
+      <div
+        className="item-store"
+      >
+        <img
+          alt="Logo pizza"
+          className="img-item-store"
+          src="../assets/pizzas/pizza-6.png"
+        />
+      </div>
+      <div
+        className="flex-column"
+      >
+        <span
+          className="title-item-store"
+        >
+          Pizza Jamon y Queso
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
