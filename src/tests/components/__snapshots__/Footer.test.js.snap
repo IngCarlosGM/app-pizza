@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teting DescriptionPage component should render correctly 1`] = `
+<footer
+  className="space-between align-center"
+>
+  <div>
+    <a
+      href="https://facebook.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Logo best pizza blanco"
+        className="footer__icons img-responsive pointer"
+        src="../assets/logo-facebook.png"
+      />
+    </a>
+    <a
+      href="https://instagram.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Logo best pizza blanco"
+        className="footer__icons img-responsive pointer"
+        src="../assets/logo-instagram.png"
+      />
+    </a>
+  </div>
+  <Link
+    to="/"
+  >
+    <img
+      alt="Logo best pizza blanco"
+      className="footer__icons img-responsive pointer"
+      src="../assets/logo-best-pizza-white.png"
+    />
+  </Link>
+</footer>
+`;

@@ -13,7 +13,7 @@
 }
 
 .container-item-store {
-    height: 190px;
+    height: 140px;
     width: 100%;
 
     &:hover { 
@@ -40,7 +40,7 @@
 .grid-shop {
     display: grid;
     gap: 20px;
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 29% 29% 29%;
     max-height: calc(100vh - 290px);
 
     @media (min-width: $breakpoint-landscape-tablet) and (orientation: landscape) { 
@@ -72,7 +72,7 @@
 
 .item-store {
     border-radius: 8px;
-    height: 140px;
+    height: 90px;
     margin-bottom: 10px;
 
     @media (min-width: $breakpoint-tablet) and (orientation: portrait) {

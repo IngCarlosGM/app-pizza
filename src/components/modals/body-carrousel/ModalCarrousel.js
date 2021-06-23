@@ -29,16 +29,19 @@ const ModalCarrousel = ({
             <div className={`container ${ (show === 'false') && 'hidden' }`}>
 
                     <div className="container__modal center-vertical-horizontal-absolute">
-                        <HeaderModal 
-                            currentItem= { currentItem }
-                            storeToShow= { storeToShow }
-                            history={ history }
-                        />
+                        <div className="container__modal-scroll">
 
-                        <BodyModal 
-                            currentItem= { currentItem }
-                            storeToShow= { storeToShow }
-                        />
+                            <HeaderModal 
+                                currentItem= { currentItem }
+                                storeToShow= { storeToShow }
+                                history={ history }
+                                />
+
+                            <BodyModal 
+                                currentItem= { currentItem }
+                                storeToShow= { storeToShow }
+                                />
+                        </div>
                     </div>
                 </div>
         </>

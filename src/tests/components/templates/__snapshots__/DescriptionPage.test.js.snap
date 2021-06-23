@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teting DescriptionPage component should render correctly 1`] = `
+<div
+  className="description-page "
+>
+  Mi descripción
+</div>
+`;

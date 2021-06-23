@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ItemStore Component should render correctly 1`] = `
+<Link
+  className="container-item-store pointer animate__bounceIn"
+  to="/search?id=1&show=true"
+>
+  <div
+    className="item-store"
+  >
+    <img
+      alt="Logo pizza"
+      className="img-item-store"
+      src="../assets/store/store-1.png"
+    />
+  </div>
+  <div
+    className="flex-column"
+  >
+    <span
+      className="title-item-store"
+    >
+      Pizzeria Capitan America
+    </span>
+    <span
+      className="addres-item-store"
+    >
+      Calle 1 #2-3
+    </span>
+  </div>
+</Link>
+`;

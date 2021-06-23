@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing FormSeach component should render correctly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    className="input-search input--block mt-third"
+    name="searchText"
+    onChange={[MockFunction]}
+    onKeyUp={[Function]}
+    placeholder="Buscar una tienda"
+    type="text"
+    value="Texto de búsqueda"
+  />
+  <button
+    className="btn__primary btn-block btn-responsive"
+    id="btn_search"
+    type="submit"
+  >
+    Buscar
+  </button>
+</form>
+`;

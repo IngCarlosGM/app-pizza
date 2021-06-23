@@ -10,8 +10,8 @@ export const Login = ( { history } ) => {
     const { loading } = useSelector( state => state.ui );
 
     const [ formValues, handleInputChange ] = useForm({
-        usuario: '',
-        password: ''
+        usuario: 'pperez@perez.com',
+        password: 'pperezs123'
     });
 
     const { usuario, password } = formValues;
@@ -23,7 +23,7 @@ export const Login = ( { history } ) => {
         dispatch( startLoginEmailPassword( usuario, password ) );
         history.replace( lastPath );
     }
-
+ 
     return (
         <div className="welcome mt-primary mb-primary">
             <img 

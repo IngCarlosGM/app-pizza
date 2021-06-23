@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in AuthRouter component should render correctly 1`] = `
+<main
+  className="auth__main"
+>
+  <div
+    className="welcome mt-primary mb-primary"
+  >
+    <img
+      alt="Logo de Best pizza"
+      className="welcome__size-logo"
+      id="logo-aside-best-pizza"
+      src="../assets/Login-Best-Pizza.png"
+    />
+    <h1
+      className="mt-secondary welcome__title"
+    >
+      Bienvenido
+    </h1>
+    <h3
+      className="mt-third welcome__text"
+    >
+      A las mejores pizzas del país
+    </h3>
+    <div
+      className="container-inputs mt-secondary"
+    >
+      <input
+        autoComplete="off"
+        className="input input--block input--user"
+        name="usuario"
+        onChange={[Function]}
+        placeholder="Usuario"
+        type="text"
+        value=""
+      />
+      <input
+        className="input--block input--password mt-input"
+        name="password"
+        onChange={[Function]}
+        placeholder="Contraseña"
+        type="password"
+        value=""
+      />
+    </div>
+    <a
+      className="mt-third pointer"
+      href="#"
+    >
+      ¿Olvidaste tu contraseña?
+    </a>
+    <button
+      className="btn__primary btn-block mt-secondary"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Iniciar sesión
+    </button>
+  </div>
+</main>
+`;

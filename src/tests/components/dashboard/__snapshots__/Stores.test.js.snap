@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Stores component should render correctly 1`] = `
+<div
+  className="grid-shop mt-secondary"
+>
+  <a
+    className="container-item-store pointer animate__bounceIn"
+    onClick={[Function]}
+  >
+    <div
+      className="item-store"
+    >
+      <img
+        alt="Logo pizza"
+        className="img-item-store"
+        src="../assets/store/store-1.png"
+      />
+    </div>
+    <div
+      className="flex-column"
+    >
+      <span
+        className="title-item-store"
+      >
+        Pizzeria Capitan America
+      </span>
+      <span
+        className="addres-item-store"
+      >
+        Calle 1 #2-3
+      </span>
+    </div>
+  </a>
+  <a
+    className="container-item-store pointer animate__bounceIn"
+    onClick={[Function]}
+  >
+    <div
+      className="item-store"
+    >
+      <img
+        alt="Logo pizza"
+        className="img-item-store"
+        src="../assets/store/store-2.png"
+      />
+    </div>
+    <div
+      className="flex-column"
+    >
+      <span
+        className="title-item-store"
+      >
+        Pizzeria Iron Man
+      </span>
+      <span
+        className="addres-item-store"
+      >
+        Calle 2 #3-4
+      </span>
+    </div>
+  </a>
+  <a
+    className="container-item-store pointer animate__bounceIn"
+    onClick={[Function]}
+  >
+    <div
+      className="item-store"
+    >
+      <img
+        alt="Logo pizza"
+        className="img-item-store"
+        src="../assets/store/store-3.png"
+      />
+    </div>
+    <div
+      className="flex-column"
+    >
+      <span
+        className="title-item-store"
+      >
+        Pizzeria Thor
+      </span>
+      <span
+        className="addres-item-store"
+      >
+        Calle 3 #4-5
+      </span>
+    </div>
+  </a>
+  <a
+    className="container-item-store pointer animate__bounceIn"
+    onClick={[Function]}
+  >
+    <div
+      className="item-store"
+    >
+      <img
+        alt="Logo pizza"
+        className="img-item-store"
+        src="../assets/store/store-4.png"
+      />
+    </div>
+    <div
+      className="flex-column"
+    >
+      <span
+        className="title-item-store"
+      >
+        Pizzeria Black Widow
+      </span>
+      <span
+        className="addres-item-store"
+      >
+        Calle 4 #5-6
+      </span>
+    </div>
+  </a>
+  <a
+    className="container-item-store pointer animate__bounceIn"
+    onClick={[Function]}
+  >
+    <div
+      className="item-store"
+    >
+      <img
+        alt="Logo pizza"
+        className="img-item-store"
+        src="../assets/store/store-5.png"
+      />
+    </div>
+    <div
+      className="flex-column"
+    >
+      <span
+        className="title-item-store"
+      >
+        Pizzeria Spider Man
+      </span>
+      <span
+        className="addres-item-store"
+      >
+        Calle 5 #6-7
+      </span>
+    </div>
+  </a>
+</div>
+`;

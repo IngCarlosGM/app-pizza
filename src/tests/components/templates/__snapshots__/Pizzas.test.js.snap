@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ItemPizza component should render correctly 1`] = `
+<div
+  className="grid-pizzas mt-third"
+>
+  <ItemPizza
+    itemPizza={
+      Object {
+        "id": 1,
+        "name": "Pizza de Pollo",
+      }
+    }
+    key="itemPizza1"
+  />
+  <ItemPizza
+    itemPizza={
+      Object {
+        "id": 2,
+        "name": "Piza Pollo y Champiñones",
+      }
+    }
+    key="itemPizza2"
+  />
+  <ItemPizza
+    itemPizza={
+      Object {
+        "id": 3,
+        "name": "Pizza Vegetales",
+      }
+    }
+    key="itemPizza3"
+  />
+  <ItemPizza
+    itemPizza={
+      Object {
+        "id": 4,
+        "name": "Pizza Vegetales y Atun ",
+      }
+    }
+    key="itemPizza4"
+  />
+  <ItemPizza
+    itemPizza={
+      Object {
+        "id": 5,
+        "name": "Pizza 3 Quesos con Champiñones",
+      }
+    }
+    key="itemPizza5"
+  />
+  <ItemPizza
+    itemPizza={
+      Object {
+        "id": 6,
+        "name": "Pizza Jamon y Queso",
+      }
+    }
+    key="itemPizza6"
+  />
+</div>
+`;

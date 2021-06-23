@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NavBar component should render correctly 1`] = `
+<nav
+  className="align-center-right"
+>
+  <img
+    alt="ícono candado"
+    className="img_responsive size-icon-logout"
+    src="../assets/ic_contrasena.png"
+  />
+  <span
+    className="text-logout pointer"
+    onClick={[Function]}
+  >
+    Salir
+  </span>
+</nav>
+`;
